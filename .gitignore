@@ -1,0 +1,11 @@
+build/*
+test-git
+*-cookies
+
+*.log
+gradle/
+.idea
+
+_minted-report
+
+selenium/

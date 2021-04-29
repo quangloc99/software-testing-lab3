@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'ru.ifmo.se.s267880.softwareTesting.lab3'
+version '1.0-SNAPSHOT'
+apply plugin: 'idea'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    implementation 'org.seleniumhq.selenium:selenium-api:3.141.59'
+    implementation 'org.eclipse.jgit:org.eclipse.jgit:5.11.0.202103091610-r'
+//    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+//    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    testImplementation 'junit:junit:4.13'
+}
+
+test {
+//    useJUnitPlatform()
+    useJUnit()
+}
